@@ -1,0 +1,11 @@
+.favorites-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+.favorite-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  

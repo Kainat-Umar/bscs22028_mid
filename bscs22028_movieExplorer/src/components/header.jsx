@@ -1,22 +1,17 @@
-import React from 'react'
-import './header.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './header.css';
 
-function header() {
-    return (
-        <>
-        <body id="home">
-            <header class="header">
-                <a href="#home" class="logo">Movie <span>Explorer</span></a>
-                <nav class="navbar">
-                    <a class="active">Home</a>
-                    <a>Movies</a>
-                    <a>Favorites</a>
-                    <a>Profile</a>
-                </nav>
-            </header>
-            </body>
-        </>
-    )
-}
+const Header = () => {
+  return (
+    <header className="app-header">
+      <h1>Movie Explorer</h1>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/favorites">Favorites</Link>
+      </nav>
+    </header>
+  );
+};
 
-export default header;
+export default Header;
